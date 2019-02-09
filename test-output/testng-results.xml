@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21386" started-at="2019-02-09T11:14:17Z" finished-at="2019-02-09T11:14:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="21386" started-at="2019-02-09T11:14:17Z" finished-at="2019-02-09T11:14:39Z">
+      <class name="com.rally.automation.TeamPlanningTest">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.rally.automation.TeamPlanningTest@27efef64]" name="initialize" is-config="true" duration-ms="15500" started-at="2019-02-09T11:14:17Z" finished-at="2019-02-09T11:14:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="enterAddNew()[pri:1, instance:com.rally.automation.TeamPlanningTest@27efef64]" name="enterAddNew" duration-ms="2164" started-at="2019-02-09T11:14:33Z" finished-at="2019-02-09T11:14:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAddNew -->
+        <test-method status="PASS" signature="enteringManageIter()[pri:2, instance:com.rally.automation.TeamPlanningTest@27efef64]" name="enteringManageIter" duration-ms="466" started-at="2019-02-09T11:14:35Z" finished-at="2019-02-09T11:14:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enteringManageIter -->
+        <test-method status="PASS" signature="enteringname()[pri:3, instance:com.rally.automation.TeamPlanningTest@27efef64]" name="enteringname" duration-ms="279" started-at="2019-02-09T11:14:35Z" finished-at="2019-02-09T11:14:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enteringname -->
+        <test-method status="PASS" signature="enteringStartDate()[pri:4, instance:com.rally.automation.TeamPlanningTest@27efef64]" name="enteringStartDate" duration-ms="2089" started-at="2019-02-09T11:14:36Z" finished-at="2019-02-09T11:14:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enteringStartDate -->
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:com.rally.automation.TeamPlanningTest@27efef64]" name="TeardownTest" is-config="true" duration-ms="809" started-at="2019-02-09T11:14:38Z" finished-at="2019-02-09T11:14:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeardownTest -->
+      </class> <!-- com.rally.automation.TeamPlanningTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
