@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9816" started-at="2019-02-09T13:33:20Z" finished-at="2019-02-09T13:33:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9816" started-at="2019-02-09T13:33:20Z" finished-at="2019-02-09T13:33:30Z">
+      <class name="com.rally.automation.TeamBoardPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.rally.automation.TeamBoardPageTest@3c0ecd4b]" name="setUp" is-config="true" duration-ms="7386" started-at="2019-02-09T13:33:20Z" finished-at="2019-02-09T13:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="sideBar()[pri:2, instance:com.rally.automation.TeamBoardPageTest@3c0ecd4b]" name="sideBar" duration-ms="248" started-at="2019-02-09T13:33:28Z" finished-at="2019-02-09T13:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sideBar -->
+        <test-method status="PASS" signature="teamBoardPage()[pri:3, instance:com.rally.automation.TeamBoardPageTest@3c0ecd4b]" name="teamBoardPage" duration-ms="481" started-at="2019-02-09T13:33:28Z" finished-at="2019-02-09T13:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teamBoardPage -->
+        <test-method status="PASS" signature="newButton()[pri:4, instance:com.rally.automation.TeamBoardPageTest@3c0ecd4b]" name="newButton" duration-ms="1474" started-at="2019-02-09T13:33:28Z" finished-at="2019-02-09T13:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newButton -->
+        <test-method status="PASS" signature="definedTypes()[pri:5, instance:com.rally.automation.TeamBoardPageTest@3c0ecd4b]" name="definedTypes" duration-ms="194" started-at="2019-02-09T13:33:30Z" finished-at="2019-02-09T13:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- definedTypes -->
+      </class> <!-- com.rally.automation.TeamBoardPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
