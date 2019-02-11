@@ -14,43 +14,31 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import utility.ConfigPage;
 
-
-public class LandingPageTest {
+public class LandingPageTest extends BasePageTest {
 
 	protected WebDriver driver;
 	LandingPage landingPage;
+	ConfigPage configPage;
 
-	@Parameters("browser")
+
 	@BeforeTest
 	public void beforeSuite(String browser) throws Exception{
-				if(browser.equalsIgnoreCase("Chrome")) {
-					System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sravani Reddy\\Documents\\Selenium\\chromedriver\\chromedriver.exe");
-		
-					driver = new ChromeDriver();
-		
-				}else if (browser.equalsIgnoreCase("edge")) { 
-		
-		
-					System.setProperty("webdriver.firefox.driver", "C:\\Users\\Sravani Reddy\\Documents\\Selenium\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-		
-					driver = new FirefoxDriver();
-		
-				} 
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sravani Reddy\\Documents\\Selenium\\chromedriver\\chromedriver.exe");
+
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized");
 		options.addArguments("--disable-notifications");
 
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(options);
-
 		driver.get("https://rally1.rallydev.com/slm/login.op");
 		landingPage = PageFactory.initElements(driver, LandingPage.class );
-		landingPage.login();
+		
+		landingPage.doLogin(userEmail, userPassword);
 
 	}
-
-
 
 	@Test
 	public void inviteUsersFromLandingPage() {
@@ -64,17 +52,10 @@ public class LandingPageTest {
 		landingPage.editProfile();
 	}
 
-
-
 	@AfterTest
 	public void afterTest() {
 		driver.close();
 
 	}
-
-
-
-
-
 
 }
