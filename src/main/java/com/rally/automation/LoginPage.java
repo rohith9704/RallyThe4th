@@ -9,15 +9,20 @@ public class LoginPage extends BasePage{
 	@FindBy(css = "input[id='j_username']")
 	WebElement userNameFeild;
 	
+	@FindBy(css = "label[for='j_username']")
+	WebElement userNameFeildTitle;
+	
 	@FindBy(css = "input[id='j_password']")
 	WebElement passwordFeild;
+	
+	@FindBy(css = "label[for='j_password']")
+	WebElement userPasswordFeildTitle;
 	
 	@FindBy(css = "input[id='login-button']")
 	WebElement loginButton;
 	
 	@FindBy(css = "h1[class='login-header']")
 	WebElement pageTitle;
-	
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
@@ -25,23 +30,29 @@ public class LoginPage extends BasePage{
 	
 	
 	public String getPageTitle() {
-		
 		return pageTitle.getText();
 	}
 	
 	public void userEmailId(String username) {
 		userNameFeild.click();
 		userNameFeild.sendKeys(username);
-		
 	}
 	
 	public void userPassword(String password) {
 		passwordFeild.sendKeys(password);
-		
 	}
 	
 	public void doLogin() {
 		loginButton.click();
 	}
+	
+	public String getuseremailFeildTitle() {
+		return userNameFeildTitle.getText();
+	}
+	
+	public String getuserPasswordFeildTitle() {
+		return userPasswordFeildTitle.getText();
+	}
+	
 
 }

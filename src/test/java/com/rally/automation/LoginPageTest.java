@@ -25,7 +25,6 @@ public class LoginPageTest {
 		{	
 			 config = new ConfigPage();
 			  
-			System.out.println("is config initialised" +config);
 			System.setProperty("webdriver.chrome.driver", config.testInitialize());
 			
 			driver = new ChromeDriver();
@@ -34,7 +33,6 @@ public class LoginPageTest {
 			driver.get("https://rally1.rallydev.com/slm/login.op");
 			driver.manage().window().maximize();
 			loginObj = PageFactory.initElements(driver, LoginPage.class);
-			System.out.println("is login page is initilaised"+loginObj);
 		}
 		
 		@AfterTest
@@ -49,14 +47,14 @@ public class LoginPageTest {
 		
 
 			loginObj.userEmailId(config.userNameDetails());
-			Assert.assertEquals(loginObj.getPageTitle(), "Sign in");
+			Assert.assertEquals(loginObj.getuseremailFeildTitle(), "USERNAME");
 			
 		}
 		
 		@Test(priority = 2)
 		public void userPasswordTest() {
 			loginObj.userPassword(config.passwordDetails());
-			Assert.assertEquals(loginObj.getPageTitle(), "Sign in");
+			Assert.assertEquals(loginObj.getuserPasswordFeildTitle(), "PASSWORD");
 		}
 		
 		@Test(priority = 3)
