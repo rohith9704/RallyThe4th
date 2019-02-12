@@ -1,5 +1,6 @@
 package com.rally.automation;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,17 +16,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import utility.ConfigPage;
+
 
 public class LandingPageTest extends BasePageTest {
-
-	protected WebDriver driver;
+	WebDriver driver;
 	LandingPage landingPage;
-	ConfigPage configPage;
-
 
 	@BeforeTest
-	public void beforeSuite(String browser) throws Exception{
+	public void intialisation(String browser) throws Exception{
 
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized");
@@ -35,19 +33,19 @@ public class LandingPageTest extends BasePageTest {
 		driver = new ChromeDriver(options);
 		driver.get("https://rally1.rallydev.com/slm/login.op");
 		landingPage = PageFactory.initElements(driver, LandingPage.class );
-		
+
 		landingPage.doLogin(userEmail, userPassword);
 
 	}
 
-	@Test
+	@Test(priority=1, groups= {"Smoke"})
 	public void inviteUsersFromLandingPage() {
 		landingPage = PageFactory.initElements(driver, LandingPage.class );
 		landingPage.inviteUsers();
 
 
 	}
-	@Test(priority=2)
+	@Test(priority=2, groups= {"Smoke"})
 	public void editProfile() {
 		landingPage.editProfile();
 	}
