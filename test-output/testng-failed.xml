@@ -5,8 +5,11 @@
     <classes>
       <class name="com.rally.automation.LoginPageTest">
         <methods>
+          <include name="userEmailIdTest"/>
           <include name="setUp"/>
           <include name="shutDown"/>
+          <include name="getPageTitleTest"/>
+          <include name="userPasswordTest"/>
           <include name="doLoginTest"/>
         </methods>
       </class> <!-- com.rally.automation.LoginPageTest -->

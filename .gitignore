@@ -10,4 +10,4 @@ test-results/*
 /target/
 
 
-test-output/*
+test-output

@@ -11,7 +11,7 @@ public class ConfigPage {
 	{
 		try {
 
-			FileInputStream inputFile = new FileInputStream("C:\\Users\\prane\\Documents\\testing classes\\RallyThe4th\\configs\\browserConfig.properties");
+			FileInputStream inputFile = new FileInputStream("C:\\Users\\prane\\Documents\\testing classes\\RallyThe4th\\RallyThe4th\\configs\\browserConfig.properties");
 			propObj = new Properties();
 			propObj.load(inputFile);
 
