@@ -8,6 +8,5 @@ test-results/*
 
 .settings/*
 /target/
-
-
 test-output/*
+
