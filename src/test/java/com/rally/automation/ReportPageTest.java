@@ -18,6 +18,7 @@ import com.rally.automation.ReportPage;
 public class ReportPageTest{
 	ChromeDriver driver;
 	ReportPage report;
+	
 	@BeforeTest
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "B:\\Driver\\chromedriver_win32\\chromedriver.exe");

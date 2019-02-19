@@ -8,12 +8,10 @@ public class ReportPage extends BasePage {
 
 	public ReportPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	String getPageTitle() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	
@@ -22,10 +20,10 @@ public class ReportPage extends BasePage {
 	*/
 	
 	@FindBy(css = "a[title='Reports']")
-	WebElement clickReportbutton;
+	WebElement clickReportButton;
 	
 	@FindBy(css = "a.rbtn.blue.primary")
-	WebElement addNewbutton;
+	WebElement addNewButton;
 	
 	@FindBy(css = "span[style='float:left;padding-right:5px;']")
 	WebElement title;
@@ -44,12 +42,12 @@ public class ReportPage extends BasePage {
 	}
 	
 	public String clickReportButton() {
-		clickReportbutton.click();
+		clickReportButton.click();
 		return title.getText();
 		
 	}
 	public boolean isAddnewButtonDisplayed() {
-		return addNewbutton.isDisplayed();
+		return addNewButton.isDisplayed();
 	}
 	
 
